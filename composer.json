@@ -1,23 +1,26 @@
 {
-    "name": "mervy/new-mvc",
-    "description": "Um MVC criado do zero com ajuda do ChatGPT",
-    "type": "project",
-    "require": {
-        "php": ">=8.3",
-        "vlucas/phpdotenv": ">=5.6",
-        "symfony/var-dumper": ">=7",
-        "league/plates": ">=3.5"
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Mervy\\NewMvc\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Rogério Soares"
-        }
-    ],
-    "minimum-stability": "stable"
+  "name": "mervy/new-mvc",
+  "description": "Um MVC criado do zero com ajuda do ChatGPT, Gemini e Claude",
+  "type": "project",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rogério Soares"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mervy\\NewMvc\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.3",
+    "vlucas/phpdotenv": ">=5.6",
+    "symfony/var-dumper": ">=7",
+    "league/plates": ">=3.5"
+  },
+  "scripts": {
+    "server": "php -S localhost:8888 -t public"
+  }
 }
